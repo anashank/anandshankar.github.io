@@ -1,4 +1,3 @@
-remote_theme: mmistakes/minimal-mistakes
 title: Anand Shankar
 description: Personal website and project updates
 
@@ -15,13 +14,15 @@ collections:
   projects:
     output: true
 
-# Plugins (GitHub Pages supports a specific set via the `github-pages` gem)
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 # Minimal Mistakes theme options (basic)
+theme: minimal-mistakes
 logo: /assets/images/avatar.svg
 exclude:
   - Gemfile
