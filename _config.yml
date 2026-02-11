@@ -22,7 +22,7 @@ plugins:
   - jekyll-include-cache
 
 # Minimal Mistakes theme options (basic)
-theme: minimal-mistakes
+theme: minimal-mistakes-jekyll
 logo: /assets/images/avatar.svg
 exclude:
   - Gemfile
