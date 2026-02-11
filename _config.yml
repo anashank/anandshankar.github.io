@@ -4,47 +4,47 @@ description: Personal website and project updates
 
 # Site author
 author:
-	name: Anand Shankar
-	email: ''
+  name: Anand Shankar
+  email: ''
 
 # URL (leave blank for local development)
 url: ""
 
 # Collections
 collections:
-	projects:
-		output: true
+  projects:
+    output: true
 
 # Plugins (GitHub Pages supports a specific set via the `github-pages` gem)
 plugins:
-	- jekyll-feed
-	- jekyll-seo-tag
-	- jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Minimal Mistakes theme options (basic)
 theme: minimal-mistakes
 logo: /assets/images/avatar.svg
 exclude:
-	- Gemfile
-	- Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
 
 # Navigation (fall back to _data/navigation.yml if present)
 navigation:
-	- title: Home
-		url: /
-	- title: Projects
-		url: /projects/
-	- title: About
-		url: /about/
-	- title: Resume
-		url: /resume/
-	- title: Contact
-		url: /contact/
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects/
+  - title: About
+    url: /about/
+  - title: Resume
+    url: /resume/
+  - title: Contact
+    url: /contact/
 
 # Defaults
 defaults:
-	- scope:
-			path: ""
-			type: "projects"
-		values:
-			layout: project
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
