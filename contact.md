@@ -4,9 +4,11 @@ title: Contact
 permalink: /contact/
 ---
 
-If you'd like to get in touch, email me at (your email) or use the form below.
+If you'd like to get in touch, email me at **anashank1804@gmail.com** or use the form below.
 
-<form action="https://formspree.io/f/your-form-id" method="POST">
+I typically respond within one business day. For job inquiries, please include the role and a short note on how I can help.
+
+<form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
   <label for="name">Name</label>
   <input type="text" id="name" name="name" required>
 
@@ -19,7 +21,9 @@ If you'd like to get in touch, email me at (your email) or use the form below.
   <button type="submit">Send</button>
 </form>
 
-Replace `your-form-id` with your Formspree form ID or use a mailto link.
+Connect: [LinkedIn](https://www.linkedin.com/in/anand-s-shankar/) • [GitHub](https://github.com/anashank)
+
+Replace `your-form-id` with your Formspree form ID or switch to a `mailto:` link if you prefer.
 ---
 layout: page
 title: Contact

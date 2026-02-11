@@ -3,26 +3,21 @@ layout: default
 title: Home
 ---
 
-# Hi — I'm Anand
+# Anand Shankar
 
-Welcome to my portfolio. I build products and developer tools. Below are recent projects and ways to get in touch.
+Senior Bioinformatics Scientist — NGS pipeline engineering, workflow orchestration, and cloud deployments.
 
-## Recent projects
+I build scalable, production-grade genomics analysis pipelines and developer tools used in clinical and research environments. I focus on performance, reproducibility, and resolving high-priority customer issues.
 
-- [Sample Project — Portfolio Starter](/projects/)
----
-layout: home
-title: Home
----
+- 5+ years building and deploying NGS secondary & tertiary analysis workflows
+- Deep experience with Illumina DRAGEN, NVIDIA Parabricks, Nextflow, Snakemake, and cloud platforms (AWS, Azure)
 
+[View Projects](/projects/) • [Resume](/resume/) • [Contact](/contact/)
 
-Welcome — I'm Anand. I build products and developer-facing tools.
+## Selected projects
 
-<!-- The Minimal Mistakes `home` layout will render configured front matter and collections. -->
-
-## Recent projects
-
-{% for project in site.projects limit:3 %}
-- [{{ project.title }}]({{ project.url }}) — {{ project.excerpt }}
+{% assign recent = site.pages | where_exp: "p", "p.path contains 'projects/'" | sort: 'path' %}
+{% for p in recent limit:3 %}
+- [{{ p.title }}]({{ p.url }}) — {{ p.excerpt | strip_html | truncate: 140 }}
 {% endfor %}
 
