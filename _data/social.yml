@@ -1,0 +1,6 @@
+- name: GitHub
+  url: https://github.com/anashank
+  icon: fab-github
+- name: LinkedIn
+  url: https://www.linkedin.com/in/anandshankar
+  icon: fab-linkedin
