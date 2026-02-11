@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/* Custom site styles — kept minimal so the theme remains primary */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+.site-header { margin-bottom: 1.5rem; }
