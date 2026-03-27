@@ -1,4 +1,4 @@
-# anandshankar.github.io
+# anashank.github.io
 
 Simple static personal website for Anand Shankar.
 
