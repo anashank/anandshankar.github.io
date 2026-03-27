@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand Shankar — Bioinformatics & Software Engineer</title>
+  <meta name="description" content="Portfolio of Anand Shankar — Bioinformatics Engineer, Software Engineer, and Data Scientist specializing in scalable genomics pipelines and cloud infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Anand Shankar</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/resume.pdf" target="_blank" class="nav-resume">Resume ↗</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content fade-up visible">
+      <p class="hero-greeting">Hello, welcome to my portfolio</p>
+      <h1 class="hero-name">Anand Shankar</h1>
+      <p class="hero-role">
+        I'm a <span id="typewriter" class="typewriter"></span>
+      </p>
+      <p class="hero-desc">
+        Building scalable genomics pipelines, data-driven tools, and cloud infrastructure
+        that accelerates biomedical research and discovery.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">
+          View My Work
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
+          Download Resume
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="about-avatar">
+          <img src="assets/images/avatar.svg" alt="Anand Shankar" onerror="this.style.display='none'" />
+          <!-- Fallback initials -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" id="avatar-fallback" style="display:none">
+            <circle cx="50" cy="38" r="22" fill="#2563eb" opacity="0.3"/>
+            <ellipse cx="50" cy="85" rx="34" ry="20" fill="#2563eb" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-text fade-up">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Bridging Biology,<br>Code & Data</h2>
+        <p>
+          I'm a Senior Bioinformatics Scientist at Leidos supporting the National Cancer Institute (NCI),
+          where I develop and maintain production-grade genomics pipelines that power large-scale cancer research.
+        </p>
+        <p>
+          With over 5 years of experience in NGS pipeline development, I specialize in variant calling,
+          RNA-seq, and epigenomics workflows using tools like Nextflow, Snakemake, DRAGEN, and NVIDIA Parabricks.
+          I've also benchmarked GPU-accelerated platforms to optimize cost and performance at scale.
+        </p>
+        <p>
+          My background spans bioinformatics, software engineering (including a full-stack internship at PayPal),
+          and cloud infrastructure on AWS and Azure — letting me build tools that are as reliable as they are fast.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">NGS</span>
+            <span class="stat-label">Pipelines</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Cloud</span>
+            <span class="stat-label">AWS & Azure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE & SKILLS ===== -->
+<section id="experience">
+  <div class="container">
+    <span class="section-label fade-up">Background</span>
+    <h2 class="section-title fade-up">Experience & Skills</h2>
+    <p class="section-subtitle fade-up">A career built across bioinformatics research, industry pipelines, and software engineering.</p>
+
+    <div class="exp-skills-wrap">
+      <!-- Timeline -->
+      <div class="exp-block fade-up">
+        <h3>Work History</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-date">Aug 2023 — Present</p>
+            <p class="timeline-role">Senior Bioinformatics Scientist</p>
+            <p class="timeline-org">Leidos / National Cancer Institute (NCI)</p>
+            <p class="timeline-desc">
+              Developing and maintaining production-grade genomics pipelines for large-scale cancer genomics programs.
+              Benchmarking GPU-accelerated tools (DRAGEN vs Parabricks) and optimizing cloud infrastructure on AWS.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">2022 — 2023</p>
+            <p class="timeline-role">Bioinformatics Scientist</p>
+            <p class="timeline-org">Illumina</p>
+            <p class="timeline-desc">
+              Built and validated clinical-grade NGS pipelines. Worked on DRAGEN platform integration,
+              variant calling QC, and workflow automation with Docker and CI/CD.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">2019 — 2022</p>
+            <p class="timeline-role">Graduate Researcher</p>
+            <p class="timeline-org">University of Michigan</p>
+            <p class="timeline-desc">
+              Developed transcriptomics and epigenetics analysis pipelines.
+              Published research in RNA-seq differential expression and chromatin accessibility.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Internship</p>
+            <p class="timeline-role">Software Engineering Intern</p>
+            <p class="timeline-org">PayPal</p>
+            <p class="timeline-desc">
+              Full-stack development on internal tools. Gained experience in JavaScript, Java, REST APIs, and agile workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-block fade-up">
+        <h3>Skills & Tools</h3>
+        <div class="skills-group">
+          <p class="skills-group-label">Languages</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skills-group-label">Bioinformatics</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Nextflow</span>
+            <span class="skill-tag">Snakemake</span>
+            <span class="skill-tag">DRAGEN</span>
+            <span class="skill-tag">Parabricks</span>
+            <span class="skill-tag">GATK</span>
+            <span class="skill-tag">BWA / STAR</span>
+            <span class="skill-tag">DESeq2</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skills-group-label">Cloud & Infrastructure</p>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">HPC / SLURM</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skills-group-label">Data Science</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">ggplot2</span>
+            <span class="skill-tag">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container">
+    <span class="section-label fade-up">Work</span>
+    <h2 class="section-title fade-up">Featured Projects</h2>
+    <p class="section-subtitle fade-up">Selected projects spanning genomics pipelines, benchmarking, and data engineering.</p>
+
+    <div class="projects-grid">
+      <div class="project-card fade-up">
+        <div class="project-icon">⚡</div>
+        <h3 class="project-title">DRAGEN vs Parabricks Benchmarking</h3>
+        <p class="project-desc">
+          Systematic performance and accuracy benchmarking of Illumina DRAGEN and NVIDIA Parabricks for
+          GPU-accelerated variant calling. Analyzed cost-per-sample, speed, and concordance at scale
+          to guide platform selection for large NCI cohorts.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">DRAGEN</span>
+          <span class="project-tag">Parabricks</span>
+          <span class="project-tag">AWS</span>
+          <span class="project-tag">GATK</span>
+        </div>
+        <a href="https://github.com/anashank" target="_blank" class="project-link">
+          View on GitHub
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-icon">🔬</div>
+        <h3 class="project-title">Production NGS Pipelines</h3>
+        <p class="project-desc">
+          Designed and deployed reproducible, containerized genomics workflows using Nextflow and Snakemake
+          for whole-genome sequencing, variant calling, and QC. Pipelines run in production supporting
+          cancer genomics programs at NCI.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Nextflow</span>
+          <span class="project-tag">Snakemake</span>
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">AWS Batch</span>
+          <span class="project-tag">Python</span>
+        </div>
+        <a href="https://github.com/anashank" target="_blank" class="project-link">
+          View on GitHub
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-icon">🧬</div>
+        <h3 class="project-title">Transcriptomics & Epigenetics Analysis</h3>
+        <p class="project-desc">
+          End-to-end RNA-seq differential expression and ATAC-seq chromatin accessibility pipelines
+          developed during graduate research at University of Michigan. Integrated multi-omics data
+          to identify regulatory mechanisms in disease models.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">R</span>
+          <span class="project-tag">DESeq2</span>
+          <span class="project-tag">STAR</span>
+          <span class="project-tag">Snakemake</span>
+          <span class="project-tag">ggplot2</span>
+        </div>
+        <a href="https://github.com/anashank" target="_blank" class="project-link">
+          View on GitHub
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <span class="section-label fade-up">Get In Touch</span>
+    <h2 class="section-title fade-up">Let's Connect</h2>
+    <p class="section-subtitle fade-up">Open to new opportunities in bioinformatics, data science, and software engineering.</p>
+
+    <div class="contact-wrap">
+      <div class="contact-info fade-up">
+        <h3>Say hello</h3>
+        <p>
+          Whether you have a role in mind, a project to collaborate on, or just want to talk
+          genomics pipelines — my inbox is always open.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:anashank1804@gmail.com" class="contact-link">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            anashank1804@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/anashank" target="_blank" class="contact-link">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/anashank
+          </a>
+          <a href="https://github.com/anashank" target="_blank" class="contact-link">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            github.com/anashank
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <!-- Replace YOUR_FORM_ID with your actual Formspree form ID -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <p id="form-status"></p>
+          <button type="submit" class="btn btn-primary">
+            Send Message
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>
+    &copy; 2025 Anand Shankar &nbsp;&middot;&nbsp;
+    Built with HTML, CSS & JS &nbsp;&middot;&nbsp;
+    <a href="https://github.com/anashank/anashank.github.io" target="_blank">View Source</a>
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
