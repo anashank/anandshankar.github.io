@@ -77,6 +77,87 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
+// ===== DNA CANVAS =====
+(function () {
+  const canvas = document.getElementById('dna-canvas');
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  function resize() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width  = rect.width  * dpr;
+    canvas.height = rect.height * dpr;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const ctx = canvas.getContext('2d');
+  let phase = 0;
+
+  function draw() {
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    const cx  = W / 2;
+    const amp = W * 0.28;
+    const N   = 80;
+    const pts1 = [], pts2 = [];
+
+    for (let i = 0; i <= N; i++) {
+      const y = (i / N) * H;
+      const t = (i / N) * Math.PI * 8 + phase;
+      pts1.push({ x: cx + amp * Math.cos(t), y });
+      pts2.push({ x: cx - amp * Math.cos(t), y });
+    }
+
+    // Strand 1
+    ctx.beginPath();
+    pts1.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.strokeStyle = 'rgba(37,99,235,0.75)';
+    ctx.lineWidth = 3 * dpr;
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+
+    // Strand 2
+    ctx.beginPath();
+    pts2.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.strokeStyle = 'rgba(99,162,255,0.75)';
+    ctx.lineWidth = 3 * dpr;
+    ctx.stroke();
+
+    // Base pairs + nodes
+    for (let i = 0; i <= N; i++) {
+      const t = (i / N) * Math.PI * 8 + phase;
+      if (Math.abs(Math.cos(t)) < 0.13) {
+        const p1 = pts1[i], p2 = pts2[i];
+        const grad = ctx.createLinearGradient(p1.x, p1.y, p2.x, p2.y);
+        grad.addColorStop(0, 'rgba(37,99,235,0.55)');
+        grad.addColorStop(1, 'rgba(99,162,255,0.55)');
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 2 * dpr;
+        ctx.stroke();
+
+        [[p1, [37,99,235]], [p2, [99,162,255]]].forEach(([p, c]) => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 5 * dpr, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${c.join(',')},0.9)`;
+          ctx.fill();
+          ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+          ctx.lineWidth = 1.5 * dpr;
+          ctx.stroke();
+        });
+      }
+    }
+
+    phase += 0.008;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
 // ===== CONTACT FORM =====
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
