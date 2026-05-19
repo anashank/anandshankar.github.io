@@ -514,7 +514,9 @@ section:nth-child(odd):not(#hero) {
   gap: 8px;
 }
 .skill-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.82rem;
@@ -522,6 +524,10 @@ section:nth-child(odd):not(#hero) {
   background: var(--accent-light);
   color: var(--accent);
   border: 1px solid rgba(37,99,235,0.15);
+}
+.skill-tag i, .project-tag i {
+  font-size: 14px;
+  line-height: 1;
 }
 
 /* ===== PROJECTS ===== */
@@ -580,6 +586,9 @@ section:nth-child(odd):not(#hero) {
   margin-top: 4px;
 }
 .project-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.75rem;
   font-weight: 500;
   padding: 3px 10px;
