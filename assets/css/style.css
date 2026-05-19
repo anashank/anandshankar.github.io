@@ -407,6 +407,10 @@ section:nth-child(odd):not(#hero) {
   color: var(--accent);
   line-height: 1;
 }
+.stat-num--skill {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 .stat-label {
   font-size: 0.8rem;
   font-weight: 500;
