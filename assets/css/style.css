@@ -325,6 +325,17 @@ section:nth-child(odd):not(#hero) {
   line-height: 1.7;
 }
 
+.hero-about {
+  margin-bottom: 32px;
+}
+.hero-about p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.hero-about p:last-child { margin-bottom: 0; }
+
 .hero-ctas {
   display: flex;
   gap: 16px;
