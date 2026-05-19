@@ -37,7 +37,7 @@ function highlightNav() {
 }
 
 // ===== TYPEWRITER =====
-const roles = ['Bioinformatics Engineer', 'Software Engineer', 'Data Scientist'];
+const roles = ['Software Engineer', 'Bioinformatics Engineer', 'Data Engineer'];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typeEl = document.getElementById('typewriter');
 
